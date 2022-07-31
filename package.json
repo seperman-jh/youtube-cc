@@ -7,7 +7,7 @@
     "url": "git+https://github.com/seperman-jh/youtube-cc.git"
   },
   "scripts": {
-    "dev": "nodemon --exec babel-node index.js"
+    "dev": "nodemon --exec babel-node src/index.js"
   },
   "author": "seperman",
   "license": "ISC",
