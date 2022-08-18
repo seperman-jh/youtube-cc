@@ -1,13 +1,9 @@
-import express from "express"
-
+import express from "express";
 const app = express();
-const callbacktest = (req, res) => console.log (req);
-const porttest = () => console.log("hi");
 
-//app.get("/", callbacktest);
+const Home = (req, res) => {
+  return res.send(req.headers);
+};
 
-app.listen(4000,porttest);
-//app.listen(3000,callbacktest);
-
-
-
+app.get("/", Home);
+app.listen(4000);
