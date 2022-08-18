@@ -6,4 +6,6 @@ const Home = (req, res) => {
 };
 
 app.get("/", Home);
+app.get("/edit", Home);
+
 app.listen(4000);
