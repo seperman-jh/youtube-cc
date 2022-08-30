@@ -4,6 +4,7 @@ import {userView, loginView} from "../controllers/userContoller"
 const userRouter = express.Router();
 
 userRouter.get("/",userView);
+userRouter.get("/:id",userView);
 userRouter.get("/login",loginView);
 
 
